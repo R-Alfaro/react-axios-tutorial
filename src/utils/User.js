@@ -20,7 +20,7 @@ class User extends React.Component {
       </div>
     );
 
-    const loadingMessage = <span className="d-flex m-auto">Loading...</span>;
+    const loadingMessage = <span className="d-flex m-auto">Loading... please wait</span>;
 
     return (
       <Card className="mx-auto mt-4 text-center p-5" style={{ maxWidth: "350px", minHeight: "350px" }}>
@@ -29,7 +29,7 @@ class User extends React.Component {
 
         {isLoading ? loadingMessage : userDetails}
 
-        <CardFooter><p style={{fontSize: '0.5rem', margin: 'auto'}}>Created by Alfaro-R</p></CardFooter>
+        <CardFooter><p style={{fontSize: '0.7rem', margin: 'auto'}}>Created by Alfaro-R</p></CardFooter>
         </Card>
     );
   }
